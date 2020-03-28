@@ -33,6 +33,11 @@
             "name": "Deaths",
             "type": "integer",
             "format": "default"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "format": "default"
           }
         ],
         "missingValues": [
