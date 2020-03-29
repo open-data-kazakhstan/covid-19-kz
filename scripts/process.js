@@ -17,7 +17,7 @@ fetch('https://www.coronavirus2020.kz/')
       const now = (new Date()).toISOString() // GMT+0
       const region = 'Казахстан'
       fs.appendFileSync('../data/kz.csv', [now, confirmed, recovered, deaths, region].join(',') + '\n')
-      const regions = ['Нур-Султан', 'Алматы', 'Караганда', 'Шымкент',
+      const regions = ['Нур-Султан', 'Алматы', 'Шымкент',
         'Акмолинская область', 'Алматинская область', 'Атырауская область',
         'Актюбинская область', 'Жамбылская область', 'Павлодарская область',
         'Северо-Казахстанская область', 'Мангистауская область',
