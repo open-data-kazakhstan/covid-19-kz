@@ -48,7 +48,7 @@ fetch('https://www.coronavirus2020.kz/')
           })
         } else {
           // For now we know that only 1 death happened in city of Nur-Sultan
-          deaths = region === 'Нур-Султан' ? 1 : 0
+          deaths = region === 'Нур-Султан' ? 2 : 0
         }
         fs.appendFileSync('../data/kz.csv', [now, confirmed, recovered, deaths, region].join(',') + '\n')
       })
